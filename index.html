@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="content">
+            <div class="info">
+                <h2>Choose the perfect Book</h2>
+                <p>Join us for a fantastic <span class="Book-night">Book night</span> filled with love, laughter, Excitement, and
+                    great company! Whether you're a fan of thrilling action, heartwarming dramas, or side-splitting
+                    comedies, we've got a books lineup to cater to all tastes. Save the book and bring your favorite snacks
+                    to make it a memorable evening.</p>
+                <button class="btn">Join</button>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+    
+                    <div class="swiper-slide">
+                        <span>8.5</span>
+                        <h2>Cavenough Tower</h2>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <span>9.5</span>
+                        <h2>Gloria Vae Victis</h2>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <span>8.1</span>
+                        <h2>Her Claim</h2>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <span>8.7</span>
+                        <h2>Living A Willian</h2>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <span>8.6</span>
+                        <h2>Summon's Second Chance</h2>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <span>8.9</span>
+                        <h2>Talon The Black</h2>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <span>8.6</span>
+                        <h2>The League</h2>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <span>8.7</span>
+                        <h2>The Sleepers</h2>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <span>9.2</span>
+                        <h2>Tied To You</h2>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <script>
+        var swiper = new Swiper('.swiper', {
+    effect: "cards",
+    grabCursor: true,
+    initialSlide: 2,
+    speed: 500,
+    loop: false,
+    rotate: true,
+    mousewheel: {
+    invert: false,
+  },
+  keyboard:{
+    enabled:true,
+    onlyInViewport: true,
+  }
+});
+    </script>
+</body>
+</html>
